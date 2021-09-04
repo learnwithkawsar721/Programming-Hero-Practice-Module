@@ -1,0 +1,21 @@
+/* ========================= Xs Device =================== */
+@media (max-width: 280px) {
+  .user-profile-dropdown {
+    margin: 0 0px !important;
+  }
+}
+@media (max-width: 576px) {
+  /* ================ NavBar============== */
+  .brand-logo {
+    display: none;
+  }
+  .user-profile-dropdown {
+    margin: 0 7px;
+  }
+
+  /* ===================Dropdown================ */
+  .dropdown-card {
+    left: 0%;
+    top: 100%;
+  }
+}

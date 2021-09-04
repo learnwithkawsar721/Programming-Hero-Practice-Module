@@ -1,0 +1,97 @@
+/* ================== Header =============== */
+
+.header-container {
+  background: #fff;
+  box-shadow: -1px 4px 20px 1px var(--text-color);
+}
+.header-brand {
+  color: #fff !important;
+  margin-left: 15px;
+}
+.sidebarcollaps .bx-menu {
+  font-size: 24px;
+  color: var(--second-color);
+  line-height: 1.5;
+  margin-left: 10px;
+}
+
+.brand-logo {
+  font-size: 24px;
+  font-weight: var(--font-600);
+  color: var(--second-color);
+  text-transform: capitalize;
+}
+.user-profile-dropdown {
+  margin: 0 12px;
+  /* padding: 10px 0; */
+}
+.icon {
+  width: 20px;
+}
+.user {
+  position: relative;
+}
+
+.count {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  height: 15px;
+  width: 15px;
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  border-radius: 10px;
+  font-size: 10px;
+}
+
+/* =================== Dropdown =============== */
+.dropdown-card {
+  width: 300px;
+  right: 13%;
+  top: 115%;
+  display: none;
+}
+.show {
+  display: block;
+}
+img.dropdown-img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.drop-title {
+  font-size: 16px;
+  text-align: center;
+  font-weight: var(--font-600);
+  color: var(--text-color);
+  margin: 0;
+  padding: 7px 0;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.dropdown-item span {
+  font-size: 12px;
+  font-weight: var(--font-400);
+  color: var(--text-color);
+}
+
+.dropdown-item .fa-times {
+  font-size: 16px;
+  font-weight: var(--font-600);
+  color: var(--text-color);
+  display: none;
+}
+.dropdown-item:hover .fa-times {
+  display: block;
+}

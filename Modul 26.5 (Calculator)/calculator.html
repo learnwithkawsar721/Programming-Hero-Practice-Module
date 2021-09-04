@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h1>Javascrip Calculator</h1>
+        <div id="view"></div>
+
+        <div class="calculator">
+            <button class="btn delete">C</button>
+            <button class="btn num">7</button>
+            <button class="btn num">8</button>
+            <button class="btn num">9</button>
+            <button class="btn oparator">/</button>
+            <button class="btn num">4</button>
+            <button class="btn num">5</button>
+            <button class="btn num">6</button>
+            <button class="btn oparator">*</button>
+            <button class="btn num">1</button>
+            <button class="btn num">2</button>
+            <button class="btn num">3</button>
+            <button class="btn oparator">-</button>
+            <button class="btn num">0</button>
+            <button class="btn num">.</button>
+            <button class="btn" id="equal">=</button>
+            <button class="btn oparator">+</button>
+        </div>
+
+    </section>
+    <script>
+        const view = document.getElementById('view');
+        //delete 
+        document.querySelector('.delete').addEventListener('click', function () {
+            view.innerText = '';
+        })
+        //Get all numbers
+        const nums = document.querySelectorAll('.num');
+        for (const num of nums) {
+            const number = num.innerText;
+            num.addEventListener('click', function () {
+                view.innerText += this.innerText;
+
+            })
+        }
+
+        //Get all oparator
+        const oparators = document.querySelectorAll('.oparator');
+        for (const oparator of oparators) {
+            oparator.addEventListener('click', function () {
+                view.innerText += this.innerText;
+            })
+        }
+        // calculate
+        document.getElementById('equal').addEventListener('click', function () {
+            const displayvalue = eval(view.innerText);
+            view.innerText = displayvalue;
+        })
+    </script>
+</body>
+
+</html>

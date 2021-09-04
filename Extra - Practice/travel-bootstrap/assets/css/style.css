@@ -1,0 +1,131 @@
+/* =========Volkhov Font============= */
+@import url("https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap");
+/* =========Poppins Font============= */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ============= Variable Css================ */
+:root {
+  /* -----------Colors------------- */
+  --body-color: #ffffff;
+  --h1-color: #14183e;
+  --p-color: #5e6282;
+  --text-color: #df6951;
+  --btn-color: #f1a501;
+
+  /* ---------Font Family---------- */
+  --heading-font: "Volkhov", serif;
+  --text-font: "Poppins", sans-serif;
+  /* ---------Font Size--------- */
+  --text-size: 1rem;
+}
+/* ============Basic Css=============== */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body {
+  box-sizing: border-box;
+  background: var(--body-color);
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--h1-color);
+  margin: 0;
+}
+p {
+  font-family: var(--text-font);
+  font-size: var(--text-size);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--p-color);
+}
+.travel__btn {
+  box-shadow: 0px 20px 35px rgb(241 165 1 / 15%);
+  border-radius: 5px;
+  color: var(--body-color);
+  transition: color 0.4s linear;
+  padding: 10px 20px !important;
+  border: none;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 400;
+}
+.travel__btn:hover {
+  color: var(--h1-color) !important;
+}
+.travel__btn:focus {
+  outline: none;
+}
+/* =============Basic Css End==================== */
+
+/* =========Header section Start================= */
+.header__section {
+  background: var(--body-color);
+}
+.header__section .navbar-brand img {
+  width: 115px;
+  height: 33px;
+}
+.header__section .nav-link {
+  color: var(--h1-color);
+}
+/* =========Header section End================= */
+
+/* ==============Hero Section======================= */
+
+h3.hero__subtitle {
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+h1.hero__title {
+  font-size: 84px;
+  line-height: 89px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  /* padding-top: 24px; */
+  margin-top: 24px;
+}
+p.hero__text {
+  width: 90%;
+}
+.hero__button {
+  padding-top: 20px;
+}
+.hero__btn1 {
+  background: var(--btn-color);
+}
+.hero__btn2 {
+  color: var(--h1-color);
+}
+.hero__btn2 .bxs-up-arrow {
+  color: var(--body-color);
+  font-size: 12px;
+}
+.hero__btn2 span {
+  background: var(--text-color);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+/* ==============Hero Section End======================= */ ;

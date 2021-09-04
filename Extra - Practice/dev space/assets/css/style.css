@@ -1,0 +1,343 @@
+/* =========Poppins Font============= */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ============= Variable Css================ */
+/*
+  *lwk => Learn With Kawsar 
+*/
+:root {
+  /* -----------Colors------------- */
+  --lwk-bg-gradient: linear-gradient(134deg, #0c0091 0%, #00a87e 100%);
+  --lwk-bg-dark: #0a007e;
+  --lwk-bg-dark-alt: #1f1f23;
+  --lwk-bg-light: #f7f7f7;
+  --lwk-bg-green: #00bc9e;
+  --lwk-light: #fff;
+  --lwk-green-light: #00ffd4;
+  --lwk-dark: #2e2e2e;
+  --lwk-primary: #3a38d2;
+
+  /* ---------Font Family---------- */
+  --lwk-font-family: "Poppins", sans-serif;
+  /* ---------Font Size--------- */
+  --lwk-font-size: 1rem;
+}
+/* ============Basic Css=============== */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+/* html {
+  font-size: var(--lwk-font-size);
+} */
+body {
+  box-sizing: border-box;
+  font-family: var(--lwk-font-family);
+}
+a {
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  overflow: hidden;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* =============Basic Css End==================== */
+
+/* ============lwk Slogan Section================= */
+.lwk-slogan {
+  background: var(--lwk-bg-dark);
+  background-image: var(--lwk-bg-gradient);
+  width: 100%;
+  height: auto;
+}
+/* ==============lwk Header================== */
+.lwk-header {
+  padding-top: 1.875rem;
+  padding-bottom: 1.25rem;
+}
+.lwk-logo-text {
+  color: var(--lwk-light);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.nav-item .nav-link {
+  color: var(--lwk-light);
+  padding: 0.25rem 1.2rem !important;
+}
+.lwk-download {
+  background: var(--lwk-bg-green);
+  border-radius: 20px;
+  transition: background 0.4s linear;
+}
+.lwk-download:focus,
+.lwk-download:hover,
+a.price-btn:focus,
+a.price-btn:hover {
+  background: var(--lwk-primary);
+}
+
+/* ===============lwk Hero Section=========== */
+.lwk-hero {
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+h1.lwk-hero-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--lwk-green-light);
+  text-shadow: 0px 5px 8px rgb(0 0 0 /10%);
+  margin-bottom: 1rem;
+  letter-spacing: 0.05rem;
+}
+
+.lwk-hero-text {
+  font-size: 0.9rem;
+  font-weight: 200;
+  color: var(--lwk-light);
+  opacity: 0.8;
+  width: 90%;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+a.hero-btn {
+  border: 1px solid var(--lwk-light);
+  padding: 0.9rem 2.5rem;
+  color: var(--lwk-light);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  background: transparent;
+  transition: 0.5s linear;
+}
+
+a.hero-btn:hover {
+  background: var(--lwk-primary);
+  border: 0;
+}
+
+/* ==============lwk Client Section================= */
+
+.lwk-client {
+  background: var(--lwk-bg-light);
+  padding: 2.5rem 0;
+  text-align: center;
+}
+.section-title {
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center;
+  border-bottom: 2px solid #00000080;
+  width: 19%;
+  margin: auto;
+  padding: 0.5rem 0;
+  opacity: 0.5;
+  text-transform: capitalize;
+}
+
+.client-img {
+  height: 34px;
+}
+
+.lwk-client-logo {
+  padding-top: 2rem;
+}
+
+/* ==============lwk Do Section============ */
+.lwk-do {
+  padding-top: 3.75rem;
+  padding-bottom: 5rem;
+}
+.do {
+  margin-bottom: 2.5rem;
+}
+
+img.do-img {
+  max-height: 60px;
+}
+
+.lwk-do-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lwk-do-details {
+  text-align: center;
+}
+h3.do-title {
+  padding: 1rem 0 0.2rem 0;
+  font-size: 1.5rem;
+  color: var(--lwk-dark);
+  font-weight: 600;
+}
+
+p.do-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--lwk-dark);
+}
+
+a.do-link {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+
+/* ===========lwk Work and Price Section ================== */
+.lwk-pric-section {
+  background: var(--lwk-bg-dark);
+}
+.work {
+  color: var(--lwk-light);
+  border-color: var(--lwk-light);
+}
+h1.work-title {
+  font-size: 3.5rem;
+  text-align: center;
+  color: var(--lwk-light);
+  font-weight: 700;
+  line-height: 1.3;
+  padding: 2rem 0;
+}
+.work-title span {
+  color: var(--lwk-green-light);
+}
+
+.card-title.title {
+  font-size: 1.5rem;
+  color: var(--lwk-dark);
+}
+
+.lwk-price {
+  text-align: center;
+}
+
+.price-amount {
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  line-height: 1.5;
+}
+.lwk-price-info {
+  list-style-type: square;
+  padding-left: 20px;
+}
+.lwk-price-info li {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+
+.lwk-pric-btn {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+a.price-btn {
+  border: 1px solid var(--lwk-dark);
+  padding: 10px 35px;
+  color: var(--lwk-light);
+  background: var(--lwk-bg-dark-alt);
+  font-size: 1.3rem;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+/* ================= lwk Team Section============= */
+
+.lwk-team-section {
+  background: var(--lwk-bg-light);
+  margin: 50px 0;
+}
+
+.lwk-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+img.team-img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.team-info {
+  padding-top: 1rem;
+}
+
+h3.team-name {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: capitalize;
+  color: var(--lwk-primary);
+  margin: 0;
+}
+
+h6.team-status {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: var(--lwk-dark);
+  padding-top: 0.5rem;
+}
+
+/* ========lwk Open Source============= */
+.lwk-openSource {
+  padding-bottom: 2rem;
+}
+.source-text {
+  font-size: 7rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 1.2;
+  padding: 1.5rem 0;
+}
+
+.source-btn {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  border: 1px solid #000;
+  padding: 15px 35px;
+  color: var(--lwk-dark);
+  border-radius: 5px;
+}
+
+.opensource-btn {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* =============lwk Footer Section================= */
+.lwk-footer {
+  background: var(--lwk-bg-dark);
+}

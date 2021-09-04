@@ -1,0 +1,66 @@
+/* =====================Col-md ============================ */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* ==============Hero Section======================= */
+
+  h3.hero__subtitle {
+    font-size: 18px;
+  }
+  h1.hero__title {
+    font-size: 50px;
+    line-height: 59px;
+    margin-bottom: 24px;
+  }
+  p.hero__text {
+    width: 100%;
+  }
+
+  /* ==============Hero Section End======================= */
+}
+/* =====================Col-md End============================ */
+
+/* =====================Col-sm ============================ */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  /* ==============Hero Section======================= */
+
+  h3.hero__subtitle {
+    font-size: 18px;
+  }
+  h1.hero__title {
+    font-size: 50px;
+    line-height: 59px;
+    margin-bottom: 24px;
+  }
+  p.hero__text {
+    width: 100%;
+  }
+
+  /* ==============Hero Section End======================= */
+}
+/* =====================Col-sm End============================ */
+
+/* =====================Col-xs ============================ */
+@media screen and (max-width: 576px) {
+  /* ==============Hero Section======================= */
+
+  h3.hero__subtitle {
+    font-size: 12px;
+  }
+  h1.hero__title {
+    font-size: 30px;
+    line-height: 39px;
+    margin-bottom: 12px;
+  }
+  p.hero__text {
+    width: 100%;
+  }
+  .hero__btn1 {
+    display: block !important;
+    margin-bottom: 10px;
+  }
+  .hero__btn2 {
+    display: block;
+    /* padding-top: 20px; */
+  }
+  /* ==============Hero Section End======================= */
+}
+/* =====================Col-xs End============================ */

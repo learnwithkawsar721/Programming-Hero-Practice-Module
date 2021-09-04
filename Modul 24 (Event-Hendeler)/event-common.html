@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="result"></p>
+    <input type="text" id="name-field">
+    <button id="update">Update</button>
+    <button onclick="handelFunction()">
+        Just Function
+    </button>
+    <button id="handel-event">
+        direct Add Event Listener
+    </button>
+
+    <script>
+        function handelFunction() {
+            const p = document.getElementById('result');
+            p.innerText = "Set by Using Method";
+        }
+        document.getElementById('handel-event').addEventListener('click', function handelEvent() {
+            const p = document.getElementById('result');
+            p.innerText = "set By Using Event handeling";
+        })
+        // direct
+        document.getElementById('update').addEventListener('click', function () {
+            const nameField = document.getElementById('name-field');
+            const inputValue = nameField.value;
+            document.getElementById('result').innerText = inputValue;
+            nameField.value = '';
+        })
+    </script>
+</body>
+
+</html>

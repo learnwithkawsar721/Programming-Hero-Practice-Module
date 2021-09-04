@@ -1,0 +1,246 @@
+/*========== Google Fonts ==============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f1ff;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: #ffffff;
+  width: 870px;
+  padding: 30px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+hr {
+  border: 1px solid #d1d1d1;
+}
+/*============= Basic Css End ==============*/
+
+/*============= Top Players Style Start ==============*/
+.top-players {
+  margin-bottom: 30px;
+}
+.section-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #562eff;
+  line-height: 36px;
+  margin-bottom: 30px;
+  margin-top: 3px;
+}
+.players,
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  /* margin-top: 40px; */
+}
+.player {
+  display: flex;
+  align-items: center;
+}
+.player img {
+  width: 56px;
+  height: 56px;
+}
+.player .player-name {
+  padding-left: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2em;
+  color: #000000;
+}
+
+/* ========== Top Blog Style ============ */
+.top-blogs {
+  margin-top: 30px;
+}
+.blogs {
+  grid-template-columns: repeat(2, 1fr);
+}
+.blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thumbnail img {
+  width: 177px;
+  height: 117px;
+}
+.blog-info {
+  padding-left: 16px;
+}
+.blog-tittle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+}
+.blog-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.blog-text a {
+  color: #562eff;
+}
+.by {
+  color: #9f9f9f;
+}
+/* Latest Course Style  */
+.course-card {
+  flex-basis: 100%;
+}
+.course-container {
+  margin-top: 30px;
+  /* padding: 0; */
+}
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+  /* padding-top: 24px; */
+}
+.course-thumble img {
+  width: 224px;
+  height: 104px;
+  margin: auto;
+}
+.course-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1e1e1e;
+}
+.course-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14.6913px;
+  line-height: 17px;
+  color: #ed6b4f;
+}
+.course-info {
+  display: flex;
+  align-items: baseline;
+  /* justify-content: space-around; */
+}
+.rating-valu {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  margin-left: 5px;
+}
+.time-durition {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.6913px;
+  line-height: 20px;
+  color: #ff4a60;
+  margin-left: 5px;
+}
+.fa-star,
+.fa-clock {
+  font-size: 12px;
+}
+.fa-star.filled {
+  color: #ffc014;
+}
+.fa-star.empty {
+  color: #a2a2a2;
+}
+.fa-clock.filled-clock {
+  color: #ff4a60;
+}
+
+/*===========================
+ Media queary
+ =========================== */
+
+/* Mobile Devices */
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .courses,
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player,
+  .blog {
+    flex-direction: column;
+  }
+  /* End Player Style */
+  .course-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}
+/* ===================
+iPads, Tablets
+====================== */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+  }
+  .blog {
+    justify-content: flex-start;
+  }
+  .course-card {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.input-content{
+  text-align: center;
+}
+.btn {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+input#updatNumber {
+    width: 50px;
+    height: 32px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}

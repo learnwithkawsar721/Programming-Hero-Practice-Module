@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section > h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: brown;
+}
+
+#view {
+  width: 350px;
+  height: 30px;
+  margin-top: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: right;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+.calculator {
+  margin-top: 30px;
+  width: 350px;
+}
+.btn {
+  font-size: 24px;
+  font-weight: 600;
+  width: 50px;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.delete {
+  display: block;
+  margin-bottom: 15px;
+}

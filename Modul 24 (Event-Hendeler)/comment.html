@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum temporibus sint, dolor necessitatibus
+            tempore exercitationem possimus velit ducimus dicta recusandae unde quae aut quaerat eligendi rerum libero
+            accusamus sequi itaque.</p>
+        <p>Voluptatem pariatur dolorem odio consequatur aliquam fugiat tempora eum vel reprehenderit, nisi asperiores
+            minus ipsam, rem culpa voluptatum ad illo? Ad, exercitationem nobis. Maiores autem eveniet optio, sequi quo
+            omnis?</p>
+        <p>Reprehenderit, sequi. Doloribus, eligendi molestias veniam vel voluptatum voluptate nostrum error accusantium
+            dolorem quam ipsam consectetur fugit nisi adipisci quaerat, reiciendis itaque facilis explicabo. Tempora
+            repellat tempore quam. Soluta, recusandae!</p>
+
+    </div>
+    <textarea name="" id="commet-box" cols="60" rows="4"></textarea>
+    <br>
+    <button id="post">Post</button>
+
+    <script>
+        document.getElementById('post').addEventListener('click', function () {
+            const commetBox = document.getElementById('commet-box');
+            // create child element 
+            let newComment = document.createElement('p');
+            newComment.innerText = commetBox.value;
+            const commentParent = document.getElementById('container');
+            commentParent.appendChild(newComment);
+            commetBox.value = '';
+        })
+    </script>
+</body>
+
+</html>
